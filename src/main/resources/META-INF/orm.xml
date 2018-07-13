@@ -9,9 +9,21 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm
 		http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/persistence/orm_2_0.xsd">
+		
+	<entity class="fr.gtm.project.proxibanque.entity.Advisor">
+		<table name="advisor" />
+		<attributes>
+			<id name="id">
+				<column name="advisor_id" />
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="login" />
+			<basic name="password" />
+		</attributes>
+	</entity>
 
 	<entity class="fr.gtm.project.proxibanque.entity.BankCard">
-		<table name="bankcard" />	
+		<table name="bankcard" />
 		<attributes>
 			<id name="id">
 				<column name="bankcard_id" />

@@ -3,6 +3,7 @@ package fr.gtm.project.proxibanque.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -16,6 +17,7 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan({ "fr.gtm.project.proxibanque.web",
 		"fr.gtm.project.proxibanque.business" })
 @EnableJpaRepositories("fr.gtm.project.proxibanque.dao")
+@Import({ SecurityConfig.class })
 public class MvcConfig {
 
 	@Bean
