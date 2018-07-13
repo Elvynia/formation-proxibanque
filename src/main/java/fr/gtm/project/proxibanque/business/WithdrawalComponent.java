@@ -2,11 +2,14 @@ package fr.gtm.project.proxibanque.business;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
 import fr.gtm.project.proxibanque.Constants;
 import fr.gtm.project.proxibanque.entity.Account;
 import fr.gtm.project.proxibanque.entity.Message;
 import fr.gtm.project.proxibanque.entity.TYPE_CARD;
 
+@Component
 public class WithdrawalComponent {
 
 	public Message processCash(Account account, Float amount) {

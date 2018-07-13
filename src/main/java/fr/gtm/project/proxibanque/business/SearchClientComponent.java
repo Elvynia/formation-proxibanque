@@ -5,10 +5,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import fr.gtm.project.proxibanque.dao.ClientDao;
 import fr.gtm.project.proxibanque.entity.Client;
 
+@Component
+@Scope("prototype")
 public class SearchClientComponent {
 	private static Integer COUNTER = 0;
 

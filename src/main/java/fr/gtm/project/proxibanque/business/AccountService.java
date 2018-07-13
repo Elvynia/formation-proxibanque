@@ -3,6 +3,7 @@ package fr.gtm.project.proxibanque.business;
 import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import fr.gtm.project.proxibanque.entity.Account;
 import fr.gtm.project.proxibanque.entity.Client;
@@ -10,6 +11,7 @@ import fr.gtm.project.proxibanque.entity.Message;
 import fr.gtm.project.proxibanque.entity.TYPE_CARD;
 import fr.gtm.project.proxibanque.entity.TYPE_COMPTE;
 
+@Service
 public class AccountService extends CrudService<Account> {
 
 	@Autowired

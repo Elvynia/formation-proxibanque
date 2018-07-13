@@ -6,9 +6,11 @@ import java.util.Map;
 
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import fr.gtm.project.proxibanque.entity.Client;
 
+@Service
 public class ClientService extends CrudService<Client> {
 
 	@Autowired
