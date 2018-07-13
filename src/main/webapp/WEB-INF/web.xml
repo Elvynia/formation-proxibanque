@@ -21,6 +21,7 @@
     <servlet-mapping>
 		<servlet-name>proxibanque-context</servlet-name>
 		<url-pattern>*.html</url-pattern>
+		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 	
 	<filter>

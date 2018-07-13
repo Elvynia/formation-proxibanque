@@ -26,6 +26,11 @@ public class IndexController {
 		return "index";
 	}
 
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
+	}
+
 	@RequestMapping("/disconnect")
 	public String disconnectClient(SessionStatus status) {
 		status.setComplete();
